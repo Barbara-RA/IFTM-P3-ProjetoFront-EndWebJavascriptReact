@@ -1,0 +1,50 @@
+/* FAQ.module.css */
+.faq {
+    background-color: #666566;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    color: white;
+}
+
+details {
+
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+summary {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+summary:hover {
+    color: #e8cde4;
+}
+
+p {
+    padding-top: 10px;
+    margin: 0;
+    color: #444;
+}
+
+p:before {
+    content: "Resposta: ";
+    font-weight: bold;
+}
+
+.faq p, .faq details {
+    color: #ededed;
+}
+
+/* Adiciona uma borda inferior nas perguntas */
+details[open] summary {
+    border-bottom: 1px solid #840792;
+    padding-bottom: 10px
+}

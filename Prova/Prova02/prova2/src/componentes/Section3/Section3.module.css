@@ -1,0 +1,14 @@
+.section3{
+    background-color: grey ;
+}
+.section3>div{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 h1{
+    margin: 20px 0 50px 0;
+}

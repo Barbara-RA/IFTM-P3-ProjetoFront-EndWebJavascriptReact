@@ -1,0 +1,12 @@
+.section2{
+    background-color: rgba(248, 151, 190, 0.46);
+}
+.section2>div{
+    width: 1200px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.section2>div>div{
+    margin: 10px;
+}

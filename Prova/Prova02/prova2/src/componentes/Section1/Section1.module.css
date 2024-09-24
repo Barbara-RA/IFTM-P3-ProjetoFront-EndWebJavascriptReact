@@ -1,0 +1,15 @@
+.section1{
+    background-color: rgba(183, 139, 254, 0.482);
+    
+
+}
+
+.section1>div{
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+}
+
+.section1>div>div{
+    margin: 10px;
+}

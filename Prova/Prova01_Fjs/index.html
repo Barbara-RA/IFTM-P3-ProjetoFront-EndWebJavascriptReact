@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/layout.css">
+    <title>Brabos Prova</title>
+</head>
+<body>
+    <div id="titulo">
+        <img src="img/branco_chama.png" alt="">
+        <h1>Promoção do dia</h1>
+    </div>
+    
+    
+    <label for="categoria">Escolha a categoria:</label>
+    <select id="categoria" onchange="carregarProdutos()">
+        <option value="selecione">Selecione</option>
+        <option value="geladeiras">Geladeiras</option>
+        <option value="smartphones">Smartphones</option>
+        <option value="todos">Todos os produtos</option>
+    </select>
+
+    <div id="promocoesGeladeiras"></div>
+    <div id="promocoesCelulares"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

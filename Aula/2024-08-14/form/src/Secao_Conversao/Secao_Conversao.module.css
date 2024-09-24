@@ -1,0 +1,16 @@
+h2{
+    color: red;
+}
+
+.secaoConversao {
+text-align: center;
+border: 1px solid #aced09;
+}
+
+.secaoConversao from label{
+    display: block;
+}
+
+.secaoConversao{
+    background-color: #aced09;
+}

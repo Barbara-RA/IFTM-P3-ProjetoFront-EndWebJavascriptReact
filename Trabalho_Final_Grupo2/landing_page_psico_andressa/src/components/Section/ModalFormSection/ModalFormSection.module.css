@@ -1,0 +1,323 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContainer {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 90%;
+    height: auto; /* Ajusta automaticamente a altura */
+    max-height: 90vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 1001;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: stretch;
+    overflow-y: auto; /* Permite a barra de rolagem se necessário */
+}
+
+.closeButton {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modalContent {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: stretch; /* Alinha a altura da imagem e do formulário */
+
+}
+
+.imageContainer {
+    width: 45%;
+    background-image: url('/images/Modal_Img_desktop.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px;
+}
+
+.formContainer {
+    flex: 1;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.formContainer h2 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #64090e;
+    margin-top: 10%;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: left;
+    width: 100%;
+    margin-bottom: 10px;
+    flex-wrap: nowrap;
+}
+
+.inputGroup label {
+    width: 30%; 
+    font-weight: bold;
+    color: #333;
+    text-align:right;
+    margin-top: 0px;
+}
+
+.inputWithError {
+    width: 80%; 
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-bottom: 0px;
+    flex-direction: row;
+
+}
+
+.inputWithError input    {
+    width: 90%; 
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: rgba(248, 232, 188, 1);
+    color: #000;
+    box-sizing: border-box;
+    height: 35px; /* Define uma altura fixa para os inputs */
+}
+
+/* .inputWithError .inputMessage {
+    height: 105px; 
+} */
+.textareaMessage {
+    width: 90%;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: rgba(248, 232, 188, 1);
+    color: #000;
+    box-sizing: border-box;
+    height: auto; 
+    resize: none; 
+    min-height: 105px; 
+    line-height: 1.5; 
+}
+
+
+/* Estilo para os erros específicos nos campos */
+.inputWithError .error {
+    color: #a94442;
+    font-size: 14px;
+    padding: 5px;
+    display: block;
+    text-align: left;
+    min-height: 10px; /* Altura mínima para reservar espaço para a mensagem de erro */
+    visibility: hidden; /* Esconde o erro por padrão, mas ainda ocupa espaço */
+
+}
+
+.inputWithError .error.visible {
+    visibility: visible; /* Torna a mensagem de erro visível quando necessário */
+    font-size: 10px;
+    color: #6e0d0a;
+}
+
+.divErro {
+    min-height: 20px;
+    color: #6e0d0a;
+    box-sizing: border-box;
+    width: 80%;
+    font-size: 12px;
+}
+
+.divErro span {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contentForm {  
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.submitButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8a0303;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    max-width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.submitButton:hover {
+    background-color: #6e0202;
+}
+
+/* Estilos para as mensagens de sucesso e erro */
+.successMessage,
+.errorMessage {
+    width: 50%;
+    padding: 5px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.successMessage {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #3c763d;
+}
+
+.errorMessage {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #a94442;
+}
+
+.msgEnvio {
+
+    min-height: 50px;
+    margin: 0px;
+}
+
+/* Estilos para telas menores que 768px */
+@media (max-width: 768px) {
+    .modalContainer {
+        flex-direction: column; 
+        width: 95%; 
+        height: auto; /* Ajuste a altura conforme o conteúdo */
+        max-height: 90vh; /* Limita a altura para evitar corte do conteúdo */
+        overflow-y: auto; /* Permite rolagem se necessário */
+        border-radius: 8px; 
+    }
+
+    .modalContent {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contentForm {
+        margin-top: 20px;
+        align-items: flex-start;
+    }
+
+    .imageContainer {
+        width: 100%;
+        height: 90px; 
+        border-radius: 10px 10px 0 0;
+        background-size: cover;
+        background-position: bottom 180px left 0px;
+    }
+
+    .formContainer {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px 10px 10px 10px;
+        margin-top: 5px;
+        align-items: flex-start;
+    }
+
+    .divErro {
+        margin: auto;
+        padding: 0px;
+        height: fit-content;
+        width: 90%;
+    }
+
+    .submitButton {
+        width: 100%; /* Botão ocupa a largura total no mobile */
+        max-width: none;
+        font-size: 16px;
+        margin-bottom: 5px;
+        border-radius: 50px;
+    }
+
+    .inputGroup label {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .inputWithError {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 2px;
+        margin-top: 2px;
+    }
+
+    .inputWithError input 
+    .inputWithError .textareaMessage{
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        min-height: 0px;
+    }
+
+    .successMessage, .errorMessage {
+        width: 90%;
+        font-size: 12px;
+        margin-top: 0px;
+        min-height: 0px;
+    }
+
+    .modalWrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        z-index: 1000;
+    }
+
+}

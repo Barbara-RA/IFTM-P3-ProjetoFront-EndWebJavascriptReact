@@ -1,0 +1,135 @@
+.mediaSection {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    background-color: rgba(248, 232, 188, 1);
+    /* border: 2px solid rgb(199, 78, 17); */
+}
+
+.mediaTop {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-bottom: 0; 
+    width: 100% !important; 
+}
+
+.mediaContent {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid blue; */
+    padding: 20px;
+}
+
+.mediaImage {
+    width: 100% !important; 
+    height: auto; 
+}
+
+.mediaContent>div{
+    flex-direction: column;
+}
+
+.lastPublications{
+    margin-left: 15px;
+    /* margin-bottom: 20px; */
+    /* border: 2px solid magenta; */
+    padding: 20px;
+    color: #000;
+}
+
+.lastPublications b{
+    color: #2F0202;
+}
+
+.mediaContent>div:nth-child(1)>p{
+    font-size: 20px; 
+}
+
+.publications{
+    margin: 32px;
+    width: 100%;
+}
+
+.libelulaMedia{
+    display: none;
+}
+
+
+@media screen and (min-width: 1025px){
+    
+    .mediaSection {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+        position: relative;
+        background-color: rgba(248, 232, 188, 1);
+        overflow: hidden;
+        /* border: 2px solid rgb(199, 78, 17); */
+    }
+    
+    .mediaTop {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        margin-bottom: 0; 
+        width: 100%; 
+    }
+    
+    .mediaContent {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        align-items: center;
+        /* border: 1px solid blue; */
+        padding: 4% 8%;
+    }
+    
+    .mediaContent>div{
+        flex-direction: row;
+        /* border: 2px solid purple; */
+    }
+    
+    .mediaContent>div:nth-child(1){
+        /* border: 1px solid green; */
+        margin-right: 5px;
+    }
+
+    .lastPublications{
+        width: 50%;
+        /* margin-left: 8%; */
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    
+    .publications{
+        margin: 0px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        /* border: 2px solid magenta; */
+    } 
+
+    .libelulaMedia{
+        display: block;;
+    }
+
+    .libelulaMedia>img{
+        position: absolute;
+        right: -15%;
+        top: 50%;
+        /* Centraliza verticalmente a imagem */
+        transform: translateY(-50%); 
+        /* Exibe apenas metade da imagem */
+        /* width: 50%;  */
+        height: auto;
+        z-index: 1; /* Garante que a imagem fique sobre o fundo */
+    }
+
+}

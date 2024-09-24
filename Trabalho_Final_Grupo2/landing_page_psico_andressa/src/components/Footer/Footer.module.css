@@ -1,0 +1,119 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #1A1A1A;
+    overflow: hidden;
+}
+
+.footerTop {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 0; 
+    width: 100%; 
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: space-around; 
+    padding-bottom: 50px;
+    /* border: 1px solid greenyellow; */
+}
+
+.footerImage {
+    width: 100%; 
+    height: auto; 
+}
+
+.footerContent>div{
+    /* border: 1px solid white; */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.footerContent>div:nth-child(1){
+    /* border: 1px solid red; */
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.footerContent>div:nth-child(2){
+    /* border: 1px solid blue; */
+    padding: 0px 30px 30px 30px;
+}
+
+.footerContent>div:nth-child(2)>img{
+    max-width: 320px;
+    height: auto; 
+    object-fit: contain;
+    min-width: 200px;
+}
+
+.footerContent>div:nth-child(3){
+    /* border: 1px solid blue; */
+    padding: 10px 8px;
+}
+
+.footerContent>div:nth-child(3)>ol{
+    padding: 10px;
+    flex-direction: row;
+    list-style-type: none;
+    border-bottom: 0.5px solid white;
+    display: none;
+}
+
+.footerContent>div:nth-child(3)>ol>li{
+    padding: 10px;
+} 
+
+.footerContent>div:nth-child(3)>ol>li>a{
+    color: #fff;
+    text-decoration: none;
+    /* border-bottom: 0.5px solid white; */
+    /* border: 1px solid goldenrod; */
+}
+
+.boxImageMedia img {
+    /* Preparação para transição suave */
+    border-bottom: transparent 2px solid;
+    border-radius: 0;
+    transform: scale(1);
+    transition: transform 0.3s, border-bottom 0.3s, border-radius 0.3s;
+}
+
+.boxImageMedia img:hover {
+    border-bottom: #f3e414 3px solid;
+    border-radius: 0 0 2px 2px;
+    transform: scale(1.1);
+}
+
+
+@media screen and (min-width: 1025px){
+    
+    .footerContent {
+        flex-direction: row;
+    }
+
+    .footerContent>div:nth-child(3)>ol{
+        display: flex;
+        flex-direction: column;
+        border-left: 0.5px solid white;
+        border-bottom: none;
+    }
+
+    .footerContent>div:nth-child(3)>ol>li{
+        padding: 5px 5px 5px 0;
+        /* border: 1px solid saddlebrown; */
+    } 
+
+    .footerContent>div:nth-child(3)>ol>li>a{
+        border-bottom: none;
+    }
+    
+    
+}

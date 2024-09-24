@@ -1,0 +1,20 @@
+#boxFilmes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    border: 2px solid black;
+    padding: 30px;
+}
+#boxFilmes div{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#boxFilmes div p{
+padding: 30px;
+}

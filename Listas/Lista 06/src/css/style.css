@@ -1,0 +1,90 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+.apresentacao {
+    text-align: center;
+}
+
+.apresentacao h1 {
+    font-size: 30px;
+    color: rgb(21, 21, 169);
+}
+
+.apresentacao p {
+    font-size: 20px;
+    color: rgb(135, 134, 134);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 30px; /* Margens laterais para o contêiner */
+    padding: 50px;
+}
+
+.boxInfo {
+    padding: 20px;
+    width: calc(25% - 30px); /* 25% para 4 caixas por linha, subtraindo o espaço entre elas */
+    height: 90px;
+    box-shadow: 0px 0px 10px 0px rgb(169, 167, 167);
+    color: rgb(21, 21, 169);
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    box-sizing: border-box; /* Para incluir a borda e a margem dentro da largura */
+    display: flex; /* Para centralizar o conteúdo dentro da caixa */
+    align-items: center; /* Centralizar verticalmente */
+    justify-content: center; /* Centralizar horizontalmente */
+    margin: 10px; /* Adiciona margens laterais e verticais */
+}
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+.apresentacao {
+    text-align: center;
+}
+
+.apresentacao h1 {
+    font-size: 30px;
+    color: rgb(21, 21, 169);
+}
+
+.apresentacao p {
+    font-size: 20px;
+    color: rgb(135, 134, 134);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Espaço entre as caixas */
+    margin: 20px 50px; /* Margens laterais para o contêiner */
+    padding: 100px;
+}
+
+
+.boxInfo {
+    padding: 20px;
+    width: 200px; /* Largura fixa das caixas */
+    height: 90px; /* Altura fixa das caixas */
+    box-shadow: 0px 0px 10px 0px rgb(169, 167, 167);
+    color: rgb(21, 21, 169);
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    box-sizing: border-box; /* Para incluir a borda e a margem dentro da largura */
+    display: flex; /* Para centralizar o conteúdo dentro da caixa */
+    align-items: center; /* Centralizar verticalmente */
+    justify-content: center; /* Centralizar horizontalmente */
+    margin: 10px 15px; /* Aumenta o espaço lateral entre as caixas */
+}
+
+.boxInfo:hover {
+    background-color: rgba(21, 21, 169, 0.199);
+    color: rgb(21, 21, 169);
+}

@@ -1,0 +1,176 @@
+.imageCard{
+    width: 240px;
+    height: 300px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px -5px rgba(84,5,5,1);
+    margin-top: 30px;
+    /* border: 1px solid brown; */
+}
+
+.cardPubli{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    /* width: 177px;
+    height: 220px;
+    margin: 3rem 0 0 0; */
+    margin: 0px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* position: relative; */
+    color: maroon;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.insta{
+    width: 20px;
+    height: 20px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.cardWrapper::before {
+    content: '';
+    position: absolute;
+    /* width: 20px;
+    height: 20px; */
+    display: block;
+    border: 1px solid #ffffff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8); 
+    z-index: 1; 
+}
+
+.cardWrapper p{
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.cardWrapper img {
+    margin-left: 5px;
+}
+
+.cardWrapper{
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 6px 0px;
+}
+
+.cardWrapper p,
+.cardWrapper img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cardWrapper h3 {
+    font-size: 0;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+
+@media screen and (min-width: 1025px){
+    
+    .imageCard{
+        width: 177px;
+        height: 220px;
+        border-radius: 0px;
+        z-index: 1;
+        margin-top: 0px;
+        box-shadow: none;
+        /* border: 1px solid brown; */
+    }
+
+    .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardPubli{
+        width: 177px;
+        margin: 0;
+    }
+    
+    .cardWrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .cardWrapper::before {
+        content: '';
+        position: absolute;
+        /* width: 20px;
+        height: 20px; */
+        display: block;
+        border: 1px solid #ffffff;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        background-color: rgba(255, 255, 255, 0.8); /* Cor branca com opacidade de 50% */
+        z-index: 1; /* Coloca o overlay acima da imagem */
+    }
+    
+    .cardWrapper p,
+    .cardWrapper h3,
+    .cardWrapper img {
+        font-size: 0;
+        visibility: hidden;
+        opacity: 0;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
+    
+    .card:hover {
+        filter: grayscale(0.8);
+    }
+    
+    .card:hover > .cardWrapper::before {
+        width: 160px;
+        height: 200px;
+        opacity: 1;
+    }
+    
+    
+    .card:hover > .cardWrapper p,
+    .card:hover > .cardWrapper h3,
+    .card:hover > .cardWrapper img{
+        opacity: 1;
+        visibility: visible;
+        font-size: 14px; 
+        z-index: 4;
+        color: initial;
+    }
+    
+    .card:hover > .cardWrapper p{
+        font-size: 12px;
+        margin-top: 15px;
+        color: maroon;
+    }
+    
+    .card:hover > .cardWrapper h3{
+        font-size: 14px;
+        color: #d9211b;
+    }
+    
+}

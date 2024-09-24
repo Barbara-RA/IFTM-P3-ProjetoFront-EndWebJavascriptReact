@@ -1,0 +1,22 @@
+nav{
+    background-color: black;
+}
+
+nav>ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+nav a:link, nav a:visited{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+}
+
+nav a:hover{
+    background-color: #ffffff;
+    color: black;
+}

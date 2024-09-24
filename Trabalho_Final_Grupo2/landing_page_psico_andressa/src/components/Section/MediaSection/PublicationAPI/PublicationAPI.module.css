@@ -1,0 +1,11 @@
+.allPulications{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid green; */
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 705px;
+    min-width: 555px;
+}
+    

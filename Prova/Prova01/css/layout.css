@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    /* Fundo claro */
+    color: #333;
+    /* Cor do texto */
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    color: #555;
+    /* Cor do título */
+}
+
+
+#promocoesGeladeiras,
+#promocoesCelulares {
+    display: flex;
+    /* Divs lado a lado */
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    /* Fundo branco */
+    border-radius: 8px;
+    /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra leve */
+    overflow: hidden;
+    /* Impede que as divs ultrapassem a largura do contêiner */
+    width: calc(50% - 20px);
+    /* Metade do tamanho do contêiner, menos o espaço entre as divs */
+    margin-right: 20px;
+    /* Espaço entre as divs */
+}
+
+
+#promocoesGeladeiras {
+    margin-right: 0;
+
+}
+
+
+#categoria {
+    margin-top: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    /* Borda cinza */
+    border-radius: 4px;
+    /* Borda arredondada */
+    background-color: #fff;
+    /* Fundo branco */
+    color: #333;
+    /* Cor do texto */
+}
+
+
+option {
+    background-color: #fff;
+    /* Fundo branco */
+}
+
+
+h2 {
+    color: #8a2be2;
+    /* Título roxo */
+}
+
+p {
+    margin: 5px 0;
+}
+
+
+img {
+    border-radius: 4px;
+    /* Borda arredondada */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    /* Sombra leve */
+}
+
+#titulo{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    box-shadow: 10px 10px 10px #888888;
+}
+
+#titulo img{
+    width: 5%;
+    border: none;
+    box-shadow: none;
+}

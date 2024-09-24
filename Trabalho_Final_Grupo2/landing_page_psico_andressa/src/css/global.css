@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    overflow: hidden;
+}
+
+section {
+    min-height: 75vh;
+    padding: 5rem 0;
+    overflow: auto;
+}
+
+section > div {
+    width: min(75rem, 100%);
+}
+
+/* Para remover a rolagem (classe que pode ser aplicada a elementos que você não quer permitir a rolagem) */
+.no-scroll {
+    overflow: hidden;
+}
+
+/* Estilização da barra de rolagem para navegadores WebKit (Chrome, Safari, Edge, Opera) */
+ ::-webkit-scrollbar {
+    background-color:rgba(26, 26, 26, 0.5);
+    width: 15px;
+} 
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(248, 232, 188, 1);
+    border-radius: 10px;
+    border:rgba(26, 26, 26,0.2) 1px solid;
+}

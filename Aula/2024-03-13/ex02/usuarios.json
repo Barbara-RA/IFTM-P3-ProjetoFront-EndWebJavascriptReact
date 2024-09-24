@@ -1,0 +1,7 @@
+{
+    "usuarios":[
+    {"nome":"Barbara Ramos", "idade":29},
+    {"nome":"Diego Diniz", "idade":35},
+    {"nome":"Milena Bertolini", "idade":26}
+    ]
+}

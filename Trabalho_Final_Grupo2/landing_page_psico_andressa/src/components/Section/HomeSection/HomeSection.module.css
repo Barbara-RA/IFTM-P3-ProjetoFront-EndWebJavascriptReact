@@ -1,0 +1,115 @@
+/* HeroSection.css */
+
+.homeSection {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100vh;
+    background: transparent;
+    position: relative;
+    color: white;
+    overflow-x: hidden; /* Adicione isso */
+    overflow-y: auto; 
+}
+
+.carousel {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1000;
+    overflow: hidden; 
+
+}
+
+.carouselDesktop {
+    display: block;
+}
+
+.carouselMobile {
+    display: none;
+}
+
+.homeSection>div {
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 75rem;
+}
+
+.heroContent {
+    text-align: center;
+    max-width: min(48rem, 100%);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.heroContent p {
+    text-align: center;
+}
+
+.heroContent img {
+    max-width: 100%;
+}
+
+.heroDescription {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.arrowIcon {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    animation: arrowMove 2s ease-in-out infinite;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+@keyframes arrowMove {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* A seta começa invisível e a animação só começa após 10 segundos */
+.arrowIcon {
+    animation-delay: 5s;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .carouselMobile {
+        display: block;
+    }
+
+    .carouselDesktop {
+        display: none;
+    }
+
+    .heroContent p {
+        text-align: center;
+    }
+
+    .arrowIcon {
+        display: none;
+    }
+}
